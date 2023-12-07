@@ -118,9 +118,8 @@ class TeamTableViewCell: UITableViewCell {
             
             playBackButton.heightAnchor.constraint(equalToConstant: 44),
             playBackButton.widthAnchor.constraint(equalToConstant: 44),
-            playBackButton.trailingAnchor.constraint(equalTo: containerVw.trailingAnchor, constant: 10),
-//            cocuouc
-//            playBackButton.centerYAnchor.constraint(equalTo: )
+            playBackButton.trailingAnchor.constraint(equalTo: containerVw.trailingAnchor, constant: 8),
+
             
             
         ])
