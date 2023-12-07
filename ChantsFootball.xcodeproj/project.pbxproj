@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7164C45A2B22070100F8257F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7164C4592B22070100F8257F /* Team.swift */; };
+		7164C45C2B22077300F8257F /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7164C45B2B22077300F8257F /* Manager.swift */; };
+		7164C45E2B22088A00F8257F /* ViewModel in Resources */ = {isa = PBXBuildFile; fileRef = 7164C45D2B22088A00F8257F /* ViewModel */; };
+		7164C4612B220E9800F8257F /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7164C4602B220E9800F8257F /* TeamTableViewCell.swift */; };
 		71B3BDAF2B20CBF200F58393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3BDAE2B20CBF200F58393 /* AppDelegate.swift */; };
 		71B3BDB12B20CBF200F58393 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3BDB02B20CBF200F58393 /* SceneDelegate.swift */; };
 		71B3BDB32B20CBF200F58393 /* ChantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3BDB22B20CBF200F58393 /* ChantsViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7164C4592B22070100F8257F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		7164C45B2B22077300F8257F /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		7164C45D2B22088A00F8257F /* ViewModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModel; sourceTree = "<group>"; };
+		7164C4602B220E9800F8257F /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		71B3BDAB2B20CBF200F58393 /* ChantsFootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChantsFootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B3BDAE2B20CBF200F58393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71B3BDB02B20CBF200F58393 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +49,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7164C4582B2206F100F8257F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7164C4592B22070100F8257F /* Team.swift */,
+				7164C45B2B22077300F8257F /* Manager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7164C45F2B220E6800F8257F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7164C4602B220E9800F8257F /* TeamTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		71B3BDA22B20CBF200F58393 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +85,9 @@
 		71B3BDAD2B20CBF200F58393 /* ChantsFootball */ = {
 			isa = PBXGroup;
 			children = (
+				7164C45F2B220E6800F8257F /* Views */,
+				7164C45D2B22088A00F8257F /* ViewModel */,
+				7164C4582B2206F100F8257F /* Model */,
 				71B3BDC72B20CD5300F58393 /* Resources */,
 				71B3BDC32B20CCEC00F58393 /* Assets.xcassets */,
 				71B3BDC22B20CCA900F58393 /* ViewControllers */,
@@ -147,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7164C45E2B22088A00F8257F /* ViewModel in Resources */,
 				71B3BDBB2B20CBF400F58393 /* LaunchScreen.storyboard in Resources */,
 				71B3BDC42B20CCEC00F58393 /* Assets.xcassets in Resources */,
 				71B3BDB62B20CBF200F58393 /* Main.storyboard in Resources */,
@@ -162,8 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B3BDC92B20CD6500F58393 /* Teams.swift in Sources */,
+				7164C45C2B22077300F8257F /* Manager.swift in Sources */,
 				71B3BDB32B20CBF200F58393 /* ChantsViewController.swift in Sources */,
 				71B3BDAF2B20CBF200F58393 /* AppDelegate.swift in Sources */,
+				7164C4612B220E9800F8257F /* TeamTableViewCell.swift in Sources */,
+				7164C45A2B22070100F8257F /* Team.swift in Sources */,
 				71B3BDB12B20CBF200F58393 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
