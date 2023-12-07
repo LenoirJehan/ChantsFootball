@@ -19,6 +19,7 @@ class ChantsViewController: UIViewController {
         tv.estimatedRowHeight = 44
         tv.separatorStyle = .none
         tv.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tv.register(TeamTableViewCell.self, forCellReuseIdentifier: TeamTableViewCell.cellId)
         return tv
     }()
     
@@ -60,22 +61,13 @@ private extension ChantsViewController {
 
 extension ChantsViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        switch indexPath.row {
-            case 0:
-                cell.backgroundColor = .systemTeal
-            case 1:
-                cell.backgroundColor = .systemRed
-            case 2:
-                cell.backgroundColor = .systemYellow
-            default:
-                break
-            }
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TeamTableViewCell.cellId, for: indexPath) as! TeamTableViewCell
+        cell.configure()
+        return cell
     }
     
     
